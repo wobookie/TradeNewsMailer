@@ -1,0 +1,12 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="text-muted">Market Mailer &copy; 2024</span>
+            </div>
+            <div class="col text-right">
+                <span class="badge" th:classappend="${smtpStatus == 'Connected'} ? 'badge-success' : 'badge-danger'" th:text="'SMTP Server Status: ' + ${smtpStatus}"></span>
+            </div>
+        </div>
+    </div>
+</footer>
